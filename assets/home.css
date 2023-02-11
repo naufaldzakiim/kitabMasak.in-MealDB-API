@@ -316,7 +316,7 @@ main {
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     color: #fff;
-    background: #38224d;
+    background: var(--violet-light);
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
@@ -376,7 +376,7 @@ main {
 }
 
 .recipe-close-btn img {
-    width: 24px;
+    width: 18px;
 }
 
 .recipe-title {
@@ -387,7 +387,7 @@ main {
 .recipe-category {
     background: #fff;
     font-weight: 600;
-    color: #38224d;
+    color: var(--violet-light);
     display: inline-block;
     padding: 0.2rem 0.5rem;
     border-radius: 0.3rem;
@@ -401,9 +401,13 @@ main {
     padding: 1rem 0;
 }
 
+.recipe-food-img {
+    margin-bottom: 1rem;
+}
+
 .recipe-food-img img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -434,7 +438,7 @@ main {
 
 .not-found {
     grid-template-columns: 1fr!important;
-    color: #38224d;
+    color: var(--violet-light);
     font-size: 1.8rem;
     font-weight: 600;
     width: 100%;
@@ -630,6 +634,28 @@ main {
     .footer {
         padding: 35px 0px;
     }
+
+    #food {
+        grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+    }
+
+    .food-item {
+        width: 140px;
+    }
+
+    .food-name {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .food-name h3 {
+        font-size: 1rem;
+    }
+
+    .recipe-btn {
+        font-size: 0.7rem;
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -663,5 +689,31 @@ main {
     .footer {
         font-size: 0.8rem;
         padding: 25px 0px;
+    }
+
+    #food {
+        grid-template-columns: repeat(auto-fit, minmax(35vw,1fr));
+        margin: 0px;
+    }
+
+    .food-item {
+        width: 35vw;
+    }
+
+    .food-name {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        width: auto;
+    }
+
+    .food-name h3 {
+        font-size: 4vw;
+    }
+
+    .recipe-btn {
+        font-size: 2.5vw;
+        padding: 5px 10px;
+        margin: 10%;
+        width: 80%;
     }
 }
