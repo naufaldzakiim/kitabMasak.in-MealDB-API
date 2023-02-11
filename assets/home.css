@@ -193,12 +193,12 @@ main {
 
 .search-input,
 .search-btn {
-    width: 90%;
+    width: 80%;
 }
 
 .search-input {
     padding: 0 1rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     outline: 0;
     border: 1px solid var(--violet-light);
     color: var(--violet-light);
@@ -211,8 +211,8 @@ main {
 }
 
 .search-btn {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     font-size: 1.8rem;
     background: var(--violet-light);
     color: #fff;
@@ -481,22 +481,6 @@ main {
 
 /* Responsive Breakpoints */
 @media screen and (min-width: 768px) {
-    .search-input,
-    .search-btn {
-        width: 90%;
-    }
-
-    .search-input {
-        padding: 0 1rem;
-        font-size: 1.1rem;
-    }
-
-    .search-btn {
-        width: 55px;
-        height: 55px;
-        font-size: 1.8rem;
-    }
-
     #food {
         margin: 20px 10px;
         grid-template-columns: repeat(auto-fit,minmax(380px,1fr));
@@ -533,7 +517,25 @@ main {
 }
 
 @media screen and (min-width: 992px) {
-    
+    .search-input,
+    .search-btn {
+        width: 90%;
+    }
+
+    .search-input {
+        padding: 0 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    .search-btn {
+        width: 65px;
+        height: 65px;
+        font-size: 1.8rem;
+    }
+
+    .search-btn img {
+        width: 30px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -635,6 +637,16 @@ main {
         padding: 35px 0px;
     }
 
+    .search-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5rem;
+    }
+
+    .search-btn img {
+        width: 20px;
+    }
+
     #food {
         grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
     }
@@ -689,6 +701,26 @@ main {
     .footer {
         font-size: 0.8rem;
         padding: 25px 0px;
+    }
+
+    .search-input,
+    .search-btn {
+        width: 70%;
+    }
+
+    .search-input {
+        padding: 0 1rem;
+        font-size: 0.8rem;
+    }
+
+    .search-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .search-btn img {
+        width: 15px;
     }
 
     #food {
