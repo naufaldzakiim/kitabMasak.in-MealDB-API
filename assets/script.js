@@ -36,7 +36,7 @@ function getFoodList() {
 }
 
 const foodListInit = () => {
-    fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=`)
+    fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=`)
     .then(response => response.json())
     .then(data => {
         let html = "";

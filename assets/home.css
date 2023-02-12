@@ -325,6 +325,7 @@ main {
     -o-border-radius: 1rem;
     width: 80vw;
     height: 80vh;
+    max-width: 992px;
     overflow-y: scroll;
     display: none;
     padding: 2rem 0;
@@ -352,7 +353,7 @@ main {
     margin: 2rem;
 }
 
-.food-details-content p:not(.recipeCategory) {
+.food-details-content p:not(.recipe-category) {
     padding: 1rem 0;
 }
 
@@ -669,6 +670,20 @@ main {
         font-size: 0.7rem;
         width: 70%;
     }
+
+    .recipe-food-img img {
+        width: 50%;
+        height: auto;
+    }
+
+    .recipe-close-btn {
+        width: 25px;
+        height: 25px;
+    }
+
+    .recipe-close-btn img {
+        width: 13px;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -748,5 +763,21 @@ main {
         padding: 5px 10px;
         margin: 10%;
         width: 80%;
+    }
+
+    .recipe-title {
+        font-size: 1.2rem;
+    }
+    
+    .recipe-category {
+        font-size: 0.9rem;
+    }
+
+    .recipe-instruction {
+        font-size: 0.9rem;
+    }
+    
+    .recipe-link a {
+        font-size: 0.9rem;
     }
 }
